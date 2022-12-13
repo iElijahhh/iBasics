@@ -25,11 +25,11 @@ public class InvincibleCommand implements CommandExecutor {
                 if(tGet == null){
                     p.sendMessage(ChatColor.DARK_RED + "This player isn't online!");
                 }else if(tGet.isInvulnerable()){
-                    p.sendMessage(ChatColor.RED + "You've set, " + ChatColor.WHITE + tGet.getDisplayName(), "'s" + ChatColor.RED + " invincibility off!");
+                    p.sendMessage(ChatColor.RED + "You've set, " + ChatColor.WHITE + tGet.getDisplayName() + "'s" + ChatColor.RED + " invincibility off!");
                     tGet.setInvulnerable(false);
                     tGet.sendMessage(ChatColor.WHITE + p.getDisplayName() + ChatColor.RED + " has set your invincibility off!");
                     }else{
-                        p.sendMessage(ChatColor.GREEN + "You've set, " + ChatColor.WHITE + tGet.getDisplayName(), "'s" + ChatColor.GREEN + " invincibility on!");
+                        p.sendMessage(ChatColor.GREEN + "You've set, " + ChatColor.WHITE + tGet.getDisplayName() + "'s" + ChatColor.GREEN + " invincibility on!");
                         tGet.setInvulnerable(true);
                         tGet.sendMessage(ChatColor.WHITE + p.getDisplayName() + ChatColor.GREEN + " has set your invincibility on!");
                     }

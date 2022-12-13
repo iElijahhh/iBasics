@@ -25,11 +25,11 @@ public class FlyCommand implements CommandExecutor {
                 if(tGet == null){
                     p.sendMessage(ChatColor.DARK_RED + "This player isn't online!");
                 }else if(tGet.isFlying()){
-                    p.sendMessage(ChatColor.RED + "You've set, " + ChatColor.WHITE + tGet.getDisplayName(), "'s" + ChatColor.GREEN + " flight off!");
+                    p.sendMessage(ChatColor.RED + "You've set, " + ChatColor.WHITE + tGet.getDisplayName() + "'s" + ChatColor.GREEN + " flight off!");
                     tGet.setFlying(false);
                     tGet.sendMessage(ChatColor.WHITE + p.getDisplayName() + ChatColor.RED + " has set your flight off!");
                     }else{
-                        p.sendMessage(ChatColor.GREEN + "You've set, " + ChatColor.WHITE + tGet.getDisplayName(), "'s" + ChatColor.GREEN + " invincibility on!");
+                        p.sendMessage(ChatColor.GREEN + "You've set, " + ChatColor.WHITE + tGet.getDisplayName() + "'s" + ChatColor.GREEN + " invincibility on!");
                         tGet.setFlying(true);
                         tGet.sendMessage(ChatColor.WHITE + p.getDisplayName() + ChatColor.GREEN + " has set your invincibility on!");
                     }
