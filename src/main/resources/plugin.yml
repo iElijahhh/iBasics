@@ -1,0 +1,39 @@
+name: iBasics
+version: '${project.version}'
+main: me.ielijah.ibasics.Main
+api-version: 1.19
+authors: [ iElijah ]
+description: Absolutely necessary commands
+commands:
+  fly:
+    description: enable flight-mode!
+    usage: /<command>
+    aliases:
+      - flightmode
+      - flight
+      - flymode
+  gma:
+    description: enable adventure-mode.
+    usage: /<command>
+    aliases:
+      - adventuremode
+      - adventure
+  gmc:
+    description: enable creative-mode.
+    usage: /<command>
+    aliases:
+      - creativemode
+      - creative
+  gms:
+    description: enable survival-mode!
+    usage: /<command>
+    aliases:
+      - survivalmode
+      - survival
+  god:
+    description: enable invincibility-mode!
+    usage: /<command>
+    aliases:
+      - invincible
+      - superstrength
+      - super
